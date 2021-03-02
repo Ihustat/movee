@@ -5,11 +5,240 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <div class="wrapper">
      <div class="content">
+<header class="header">
+  <div class="container">
+<div class="header__inner">
+    <div class="header-top">
+        <div class="logo">
+          <a href="#">MOVEE</a>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">Автопарк</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__tel">
+          <a href="tel:88000801213">8(800)-080-12-13</a>
+        </div>
+     </div>
+     <div class="header__bottom">
+       <div class="header__title">
+        Квартирные переезды<span> По Москве и области</span>
+       </div>
+       <div class="header__button">
+         <a href="#">Заказать</a>
+       </div>
+         <ul class="header__info-list">
+           <li>Более 800
+            переездов</li>
+           <li class="gift">Бережная 
+            упаковка</li>
+           <li class="money">Фиксированная
+            цена</li>
+         </ul>
+         <div class="header__info-button">
+           <a href="tel:88000801213"><img src="images/phone.svg" alt=""></a>
+         </div>
+       
+     </div>
+</div>
+  </div>
+</header>
+
+<section class="how">
+  <div class="container">
+    <div class="how__inner">
+      <div class="how__title title">
+        Как это происходит?
+      </div>
+      <ul class="how__list">
+        <li>
+          <div class="how__list-title">
+          Оценка объема предстоящих работ
+        </div>
+        <div class="how__list-text">
+          Стоимость переезда зависит от количества комнат, вещей и мебели. 
+        </div>
+      </li>
+        <li>
+          <div class="how__list-title">
+            Упаковка вещей
+        </div>
+        <div class="how__list-text">
+          Упаковываем вещи в коробки, подписываем. Габаритное и деликатное,  упаковываем отдельно. 
+        </div>
+      </li>
+        <li>
+          <div class="how__list-title">
+            Погрузка и транспортировка вещей
+        </div>
+        <div class="how__list-text">
+          В нашем автопарке имеются машины, подходящие для мебели любых габаритов.
+        </div>
+      </li>
+        <li>
+          <div class="how__list-title">
+            Распаковка и расстановка мебели
+        </div>
+        <div class="how__list-text">
+          Опытные грузчики быстро расставят мебель и уберут мусор от распаковки.
+        </div>
+      </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="price">
+  <div class="container">
+    <div class="price__inner">
+      <div class="price__title title">
+        Цены 
+      </div>
+      <div class="price__subtitle">
+        Фиксированная стоимость на переезд под ключ  
+      </div>
+      <div class="price__items">
+        <div class="price__item">
+          <div class="price__item-title">
+            1-комнатная кв-ра  
+          </div>
+            <ul class="price__item-list">
+              <li>1 фургон</li>
+              <li>2 грузчика</li>
+              <li>Переезд за 4 часа</li>
+            </ul>
+            <div class="price__item-price">
+              8 490₽ 
+            </div>
+            <div class="price__item-button">
+              Заказать
+            </div>
+        </div>
+        <div class="price__item">
+          <div class="price__item-title">
+            1-комнатная кв-ра  
+          </div>
+            <ul class="price__item-list">
+              <li>1 фургон</li>
+              <li>2 грузчика</li>
+              <li>Переезд за 4 часа</li>
+            </ul>
+            <div class="price__item-price">
+              8 490₽ 
+            </div>
+            <div class="price__item-button">
+              Заказать
+            </div>
+        </div>
+        <div class="price__item">
+          <div class="price__item-title">
+            1-комнатная кв-ра  
+          </div>
+            <ul class="price__item-list">
+              <li>1 фургон</li>
+              <li>2 грузчика</li>
+              <li>Переезд за 4 часа</li>
+            </ul>
+            <div class="price__item-price">
+              8 490₽ 
+            </div>
+            <div class="price__item-button">
+              Заказать
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="park">
+  <div class="container">
+    <div class="park__inner">
+      <div class="park__title title">
+        Автопарк
+      </div>
+      <div class="park__subtitle">
+        10 видов автомобилей от 800 кг до 10 тонн
+      </div>
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Gas')" id="defaultOpen">Газели</button>
+        <button class="tablinks" onclick="openCity(event, 'Cabs')">Каблуки</button>
+        <button class="tablinks" onclick="openCity(event, 'Gruz')">Грузовики</button>
+      </div>
+      <div id="Gas" class="tabcontent">
+        <div class="slider">
+          <div class="slider__item">
+       <div class="slider__item-inner">
+              <div class="sliders__item-content">
+                <div class="sliders__item-title">Газель 3 метра </div>
+                <ul class="sliders__item-list">
+                  <li>Ширина 2 м</li>
+                  <li>Высота 2 м</li>
+                  <li>Объем 16 м³</li>
+                  <li>Грузоподъемность 1,5 т</li>
+                </ul>
+                <a href="#" class="slider__item-button">Заказать</a>
+              </div>
+              <img src="images/big-truck.png" alt="" class="slider__item-image">
+       </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item-inner">
+                   <div class="sliders__item-content">
+                     <div class="sliders__item-title">Газель 3 метра </div>
+                     <ul class="sliders__item-list">
+                       <li>Ширина 2 м</li>
+                       <li>Высота 2 м</li>
+                       <li>Объем 16 м³</li>
+                       <li>Грузоподъемность 1,5 т</li>
+                     </ul>
+                     <a href="#" class="slider__item-button">Заказать</a>
+                   </div>
+                   <img src="images/big-truck.png" alt="" class="slider__item-image">
+            </div>
+               </div>
+               <div class="slider__item">
+                <div class="slider__item-inner">
+                       <div class="sliders__item-content">
+                         <div class="sliders__item-title">Газель 3 метра </div>
+                         <ul class="sliders__item-list">
+                           <li>Ширина 2 м</li>
+                           <li>Высота 2 м</li>
+                           <li>Объем 16 м³</li>
+                           <li>Грузоподъемность 1,5 т</li>
+                         </ul>
+                         <a href="#" class="slider__item-button">Заказать</a>
+                       </div>
+                       <img src="images/big-truck.png" alt="" class="slider__item-image">
+                </div>
+                   </div>
+          
+        </div>
+      </div>
+      <div id="Cabs" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+      </div>
+      
+      <div id="Gruz" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
      </div> 
      <div class="footer">

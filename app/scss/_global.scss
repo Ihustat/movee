@@ -9,6 +9,7 @@ html{
 a{
     display: inline-block;
     text-decoration: none;
+    color: inherit;
 }
 ul,
 li{
@@ -17,7 +18,10 @@ li{
     list-style: none;
 }
 body{
-  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
     font-display:swap ;
 }
 html,
@@ -37,10 +41,23 @@ body {
 	flex: 0 0 auto;
 }
 .container{
-   
+   max-width: 1342px;
+margin: 0 auto;
+padding: 0 15px;
 }
 .container-fluid{
     max-width: 100%;
     margin: 0 auto;
     padding: 0 px;
+}
+.logo{
+    font-weight: 600;
+font-size: 30px;
+line-height: 37px;
+}
+.title{
+    font-weight: 600;
+font-size: 30px;
+line-height: 37px;
+text-align: center;
 }

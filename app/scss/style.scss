@@ -1,5 +1,347 @@
 @import 'vars';
 @import 'global';
 @import 'fonts';
+// start header
+.header{
+    background-color: #FED100;
+    padding: 40px 0 83px;
+    &__inner{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url(../images/man.png);
+         bottom: -83px;
+            right: 312px;
+            width: 381px;
+            height: 608px;
+            z-index: 2;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            background-image: url(../images/yellow-truck.png);
+         bottom: 87px;
+            right: -100px;
+            width: 499px;
+            height: 300px;
+            z-index: 1;
+        }
+    }
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 63px;
+    }
+    &__list{
+        margin-left: 315px;
+        margin-right: auto;
+        display: flex;
+        li+li{
+            margin-left: 46px;
+        }
+        a{
+            font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+        }
+    }
+    &__tel{
+        a{
+
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            text-decoration: underline;
+        }
+    }
+    &__bottom{
+        max-width: 546px;
+    
+    }
+&__title{
+    font-weight: 700;
+    font-size: 70px;
+line-height: 126.9%;
+margin-bottom: 50px;
+span{
+    display: block;
+    font-weight: 600;
+font-size: 30px;
+line-height: 37px;
+}
+}
+&__button{
+    a{ 
+    width: 304px;
+    padding: 16px 10px;
+    background-color: $red;
+    text-align: center;
+    color: #f2f2f2;
+    margin-bottom: 76px;
+    font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+    position: relative;
+    z-index: 1;
+    &::after{
+content: "";
+position: absolute;
+top: 10px;
+left: 10px;
+width: 304px;
+height: 60px;
+border: 1px solid #fff;
+z-index: -1;
+    }
+}
+}
+&__info-list{
+    display: flex;
+    li{
+        max-width: 160px;
+        padding-left: 61px;
+        position: relative;
+        &::before{
+            content:"";
+            position: absolute;
+            background-image: url(../images/icons/truck.svg);
+            background-repeat: no-repeat;
+            width: 52px;
+            height: 39px;
+            top: 0;
+            left: 0px;
+        }
+        &+li{
+            margin-left: 26px;
+        }
+    }
+    .gift{
+        &::before{
+            background-image: url(../images/icons/gift.svg);
+        }
+    }
+    .money{
+        &::before{
+            background-image: url(../images/icons/money.svg);
+        }
+    }
+}
+&__info-button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(61, 155, 233, 0.8);
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+   img{
+  margin-top: 24px;
+  margin-left: 24px;
+   }
+}
+}
+
+
+// end header
+// start how
+.how{
+    padding: 95px 0 27px;
+    &__title{
+        margin-bottom: 66px;
+
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        counter-reset: section;
+        justify-content: space-around;
+        li{
+           width: 474px;
+           padding-left: 93px;
+           margin-bottom: 77px;
+           position: relative;
+           &::before{
+               content: "0" counter(section);
+               counter-increment: section;
+               position: absolute;
+               left: 0;
+               top: 12px;
+              font-size: 50px;
+              text-shadow: $yellow 2px 0;
+           }
+        }
+        &-title{
+            font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+margin-bottom: 15px;
+        }
+        &-text{
+
+        }
+    }
+}
+// end how
+// start price
+.price{
+    padding: 59px 0 67px;
+    &__title{
+        margin-bottom: 15px;
+    }
+    &__subtitle{
+        margin-bottom: 60px;
+        font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        text-align: center;
+        width: 421px;
+        padding: 84px 93px 80px 88px;
+        border: 1px solid #EBEBEB;
+        &:hover{
+            border: 1px solid $yellow;
+        }
+        &-title{
+            font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+margin-bottom: 60px;
+        }
+        &-list{
+            margin-bottom: 35px;
+            text-align: center;
+            li{
+                margin-bottom: 25px;
+            }
+        }
+        &-price{
+            font-weight: 600;
+font-size: 30px;
+line-height: 37px;
+margin-bottom: 52px;
+        }
+        &-button{
+            background-color: $yellow;
+            width: 250px;
+            padding: 14px 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+// end price
+// start park
+.park{
+    padding: 35px 0 46px;
+    &__title{
+        margin-bottom: 15px;
+    }
+    &__subtitle{
+        margin-bottom: 60px;
+        font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+    }
+}
+.tab{
+    text-align: center;
+}
+.tablinks{
+    width: 201px;
+    text-align: center;
+    border: 1px solid #EBEBEB;
+    padding: 13px 10px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 47px;
+   &.active{
+    border: 1px solid $yellow;
+   }
+    &+&{
+        margin-left: 19px;
+    }
+}
+
+.slider__item-inner{
+
+    max-width: 1003px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sliders__item{
+&-title{
+    font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+margin-bottom: 37px;
+}
+&-list{
+    margin-bottom: 7px;
+    li{
+        margin-bottom: 28px;
+        padding-left: 28px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url(../images/icons/mark.svg);
+            left: 0;
+            top: 2px;
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
+&-button{
+    
+       background-color: $yellow;
+      width: 250px;
+      padding: 13px 10px;
+      text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+   
+}
+}
+.slider{
+    position: relative;
+}
+.slick-arrow{
+    background-color: transparent;
+   z-index: 2;
+    position: absolute;
+    top: 50%;
+   
+    transform: translateY(-50%);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    
+}
+.slick-next{
+    position: absolute;
+    right: 0;
+}
+
+
+
+// end park
 
 @import 'media';
