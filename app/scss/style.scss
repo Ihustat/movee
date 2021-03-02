@@ -5,6 +5,8 @@
 .header{
     background-color: #FED100;
     padding: 40px 0 83px;
+    position: relative;
+    z-index: -2;
     &__inner{
         position: relative;
         &::before{
@@ -84,7 +86,7 @@ line-height: 37px;
 font-size: 24px;
 line-height: 29px;
     position: relative;
-    z-index: 1;
+
     &::after{
 content: "";
 position: absolute;
@@ -207,6 +209,7 @@ text-align: center;
         width: 421px;
         padding: 84px 93px 80px 88px;
         border: 1px solid #EBEBEB;
+        transition: all .3s;
         &:hover{
             border: 1px solid $yellow;
         }
@@ -308,27 +311,16 @@ margin-bottom: 37px;
         }
     }
 }
-&-button{
-    
-       background-color: $yellow;
-      width: 250px;
-      padding: 13px 10px;
-      text-align: center;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-   
-}
 }
 .slider{
     position: relative;
 }
 .slick-arrow{
     background-color: transparent;
-   z-index: 2;
+    z-index: 2;
     position: absolute;
     top: 50%;
-   
+    
     transform: translateY(-50%);
     cursor: pointer;
     outline: none;
@@ -339,9 +331,190 @@ margin-bottom: 37px;
     position: absolute;
     right: 0;
 }
-
-
+.slider__item-button{
+    
+       background-color: $yellow;
+      width: 250px;
+      padding: 13px 10px;
+      text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+   
+}
 
 // end park
+// start reviews
+.reviews{
+    padding: 100px 0 94px;
+    background-color: $yellow;
+    text-align: center;
+    &__title{
+        margin-bottom: 60px;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 59px;
+    }
+    &__item{
+        max-width: 420px;
+        text-align: left;
+        &-name{
+            font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+margin-bottom: 10px;
+        }
+        &-info{
+            display: flex;
+            align-items: center;
+            margin-bottom: 19px;
+        }
+        &-rate{
+margin-left: 10px;
+        }
+        &-link{
+            text-decoration: underline;
+            margin-top: 18px;
+        }
+    }
+    &__link{
+        width: 250px;
+        margin: 0 auto;
+        padding: 13px 10px;
+        border: 1px solid #333333;
+        text-align: center;
+    }
+}
+.jq-ry-container>.jq-ry-group-wrapper{
+    top: -1px;
+}
+// end reviews
+
+
+// start callback
+.callback{
+    padding: 123px 0;
+    &__title{
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    &__subtitle{
+  margin-bottom: 34px;
+    }
+    &__form{
+        form{
+       &> input{
+            width: 300px;
+            border: none;
+            border-bottom: 1px solid #333333;
+            padding: 10px 10px 10px 0;
+           margin-right: 70px;
+        }
+    }
+        button{
+            background-color: $red;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #F2F2F2;
+            width: 250px;
+            padding: 13px 10px;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 250px;
+                height: 50px;
+                border: 1px solid $yellow;
+                top: 10px;
+                left: 10px;
+                z-index: -1;
+            }
+        }
+        &-check{
+     text-align: right;
+     margin-top: 22px;
+     margin-right: 300px;
+     label{
+         margin-left: 10px;
+         font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.015em;
+     }
+        }
+    }
+}
+
+// end callback
+// start map
+#map{
+    height: 666px;
+    width: 100%;
+}
+// end map
+// start footer
+.footer{
+    background-color: $yellow;
+    padding: 100px 0;
+    &__inner{
+        display: flex;
+    }
+    &__info{
+        max-width: 238px;
+        margin-right: 203px;
+        &-text{
+            margin-top: 44px;
+        }
+    }
+    &__menu{
+        margin-right: 178px;
+        li{
+            margin-bottom: 15px;
+            a{
+                font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+            }
+        }
+    }
+    &__social{
+max-width: 166px;
+margin-right: 169px;
+    }
+    &__links{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__mail{
+   border-bottom:1px solid #333333;;
+    }
+    &__call{
+        text-align: center;
+        font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+&-link{
+    display: block;
+    width: 250px;
+    
+    text-align: center;
+    padding: 10px 10px;
+    border: 1px solid #333333;
+    margin-bottom: 15px;
+}
+&-number{
+
+}
+    }
+}
+// end footer
+
+
 
 @import 'media';

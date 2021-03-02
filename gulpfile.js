@@ -41,7 +41,9 @@ function images() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/rateyo/src/jquery.rateyo.js',
         'node_modules/slick-carousel/slick/slick.js',
+        // 'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
         'app/js/main.js',
 
     ])
@@ -57,6 +59,9 @@ function styles() {
         'app/scss/style.scss',
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
+        'node_modules/rateyo/src/jquery.rateyo.css',
+        // 'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+        // 'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css'
     ])
         .pipe(scss({outputStyle: 'compressed'}))
         .pipe(concat('style.min.css'))

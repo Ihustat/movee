@@ -8,7 +8,14 @@ $(function(){
         prevArrow: '<button type="button" class="slick-prev slick-arrow"><img src="images/icons/arrow-prev.svg" alt=""></button>',
         nextArrow: '<button type="button" class="slick-next slick-arrow"><img src="images/icons/arrow-next.svg" alt=""></button>'
       });
-   
+      $(".reviews__item-rate").rateYo({
+        rating: 5,
+        readOnly: true,
+        ratedFill: "#FF352B",
+        starWidth: "15px"
+      });
+     
+      $('input[type=checkbox]').styler();
 });
 function openCity(evt, cityName) {
     // Declare all variables
@@ -31,3 +38,4 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
